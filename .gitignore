@@ -19,3 +19,6 @@ venv
 bin
 .buildozer
 .idea
+
+# osx
+*.dylib
