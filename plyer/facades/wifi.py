@@ -59,6 +59,11 @@ To get available wifi networks::
     >>> return wifi.get_available_wifi()
 
 This returns all the available wifi networks near the device.
+
+Supported Platforms
+-------------------
+Windows, OS X, Linux
+
 '''
 
 
@@ -76,7 +81,7 @@ class Wifi(object):
         '''
         Turn on scanning.
         '''
-        self._start_scanning()
+        return self._start_scanning()
 
     def get_network_info(self, name):
         '''
@@ -88,7 +93,7 @@ class Wifi(object):
         '''
         Returns a list of all the available wifi.
         '''
-        self._get_available_wifi()
+        return self._get_available_wifi()
 
     def connect(self, network, parameters):
         '''
